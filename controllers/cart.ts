@@ -47,8 +47,6 @@ const cartController = {
                 myCart.save()
             }
 
-
-
              res.status(200).send(myCart)
 
             }
@@ -222,7 +220,7 @@ const cartController = {
                await myCart?.save()
 
                //Le aviso que se ha eliminado una unidad del carrito
-               res.send("Se ha eliminado el producto: " + producto.name + "\n Ahora hay" + producto.amount + "en el carrito")
+               res.send("Se ha eliminado el producto: " + producto.name + "\n Ahora hay " + producto.amount + " " + producto.name +" en el carrito")
 
             }
 
